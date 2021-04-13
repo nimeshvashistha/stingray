@@ -509,3 +509,15 @@ def phaseogram(times, f, nph=128, nt=32, ph0=0, mjdref=None, fdot=0, fddot=0,
         additional_info = {}
 
     return phas, binx, biny, additional_info
+
+
+class PulsarPeriodogram(object):
+    def __init__(self, freq, nbin, stat):
+        """
+        A pulsar periodogram object.
+        """
+        self.freq = freq
+        self.nbin = nbin
+        self.stat = stat
+
+
